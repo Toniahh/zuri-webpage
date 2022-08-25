@@ -1,0 +1,941 @@
+@import url('http://fonts.cdnfonts.com/css/averta-blackitalic');
+@import url('http://fonts.cdnfonts.com/css/graphik');
+
+/* Styling For Landing Page */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Averta-Regular', sans-serif;
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Averta-Regular', sans-serif;
+}
+
+.hero-container {
+    background-image: url(img/spiral\ img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFFAFA;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 4rem;
+}
+
+.hero-container img {
+    margin-bottom: 5rem;
+}
+
+.second-container h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    color: #514949;
+    margin: auto;
+    padding-bottom: 2rem;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.second-container p {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 6.5rem;
+    line-height: 1.5rem;
+    color: #7A7373;
+}
+
+span {
+    color: rgb(228, 19, 19);
+    font-family: 'Graphik', sans-serif !important;
+}
+
+.btn-div a {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.btn-red {
+    background-color: rgb(228, 19, 19);
+    color: white;
+}
+
+.btn-lined {
+    color: rgb(228, 19, 19);
+    border: 1px solid red;
+}
+
+.btn-red:hover {
+    background: white;
+    color: rgb(228, 19, 19);
+}
+
+.btn-lined:hover {
+    background: rgb(228, 19, 19);
+    color: white;
+}
+
+#main-body .main-body h3 {
+    font-family: 'Averta-Light',
+        sans-serif;
+    font-weight: 100;
+}
+
+#main-body .main-body .content {
+    margin: auto;
+    overflow: hidden;
+}
+
+.card {
+    background: url(img/dotted\ img.png ) left, url(img/whitedotted.png) right;
+    background-repeat: no-repeat;
+    background-size: 450px;
+}
+
+.content .small-heading {
+    text-align: center !important;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10rem;
+}
+
+.content .center-heading {
+    text-align: center;
+    line-height: 3rem;
+    color: #3f3b3b;
+    font-family: 'Averta-Light', sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    color: #7A7373;
+}
+
+.cards {
+    background-color: #FFFAFA;
+    padding: 3rem;
+}
+
+.cards img {
+    padding-bottom: 3rem;
+}
+
+.cards p {
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.cards a {
+    text-decoration: none;
+    color: rgb(228, 19, 19);
+}
+
+#zuri-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1.3rem;
+    margin-top: 10.438rem;
+    margin-bottom: 3rem;
+    font-family: 'Averta-Regular', sans-serif;
+    font-weight: bold;
+    color: #514949;
+}
+
+.footer-link p {
+    color: #514949;
+}
+
+.footer-link a {
+    display: block;
+    text-decoration: none;
+    color: rgb(228, 19, 19);
+    margin-top: 1rem;
+}
+
+.contact-footer h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #514949;
+}
+
+.contact-footer p {
+    line-height: 1.5rem;
+    margin-top: 0.7rem;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.contact-footer a {
+    line-height: 3rem;
+    text-decoration: none;
+    color: rgb(228, 19, 19);
+    font-size: 0.9rem;
+}
+
+#social-icons h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: #514949;
+}
+
+.social-icons img {
+    width: 20px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
+hr {
+    border: 0.7px solid #514949;
+    opacity: 0.2;
+    width: 97%;
+    margin: 1rem !important;
+}
+
+.last-footer {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    color: #514949;
+    font-weight: 700;
+    font-family: 'Averta-Regular', sans-serif;
+}
+
+
+
+
+/* Media Queries for the landing page*/
+
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width:50px) and (max-width:768px) {
+    .btn-div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 60%;
+        margin: auto;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #zuri-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .footer-container img {
+        width: 150px;
+    }
+
+    .footer-link p {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .contact-footer h4 {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    #social-icons h4 {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+/* Styling for the talent page */
+
+/* Styling for the header and navbar */
+
+
+.nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 7rem 2.5rem 6rem;
+    width: 100% !important;
+    max-width: 1440px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+.a-tags a {
+    padding-right: 3rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #7c7e80;
+    font-family: 'Graphik', sans-serif !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.a-tags .home-a {
+    text-decoration: underline 3px solid #E7332B;
+    text-underline-offset: 20px;
+}
+
+.a-tags .hire {
+    border: 1px solid #E7332B;
+    border-bottom-right-radius: 8px;
+    background-color: #E7332B;
+    color: #FFFFF2;
+    padding: 0.8rem 2.2rem 0.8rem 2rem;
+}
+
+.main-id {
+    width: 100% !important;
+    max-width: 1440px;
+    margin: auto !important;
+    overflow: hidden;
+    font-family: 'Graphik', sans-serif !important;
+}
+
+
+/* Styling for section-1 */
+
+.section-1 {
+    display: flex;
+    background-image: url(img/bigyellowspiral.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    /* mix-blend-mode: soft-light !important; */
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 13rem;
+    padding-bottom: 4rem;
+    font-family: 'Graphik', sans-serif !important;
+}
+
+.texts {
+    margin-left: 6rem;
+    /* margin-top: 2rem; */
+}
+
+.position {
+    margin-left: 27rem;
+    margin-top: -2.3rem;
+}
+
+.texts h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Graphik', sans-serif !important;
+    font-weight: 600;
+}
+
+.texts p {
+    width: 55%;
+    font-size: 1.2rem;
+    /* line-height: 1.3rem; */
+    opacity: 0.5;
+    padding: 1rem 0 2rem 0;
+    font-family: 'Graphik', sans-serif !important;
+}
+
+.button-link button {
+    padding: 0.7rem 3.2rem;
+    margin-right: 0.7rem;
+    border-bottom-right-radius: 8px;
+    border: none;
+    box-shadow: #5a5757 0 1px 2px;
+    color: #FAFAFA;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-family: 'Graphik', sans-serif !important;
+}
+
+.button-link .red {
+    background-color: #E7332B;
+}
+
+.button-link .gray {
+    background-color: #585858;
+}
+
+.black-img img {
+    width: 400px;
+    margin-right: 6rem;
+}
+
+/* Styling for section-2 */
+
+.section-2 {
+    background-image: url(img/map.png);
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-color: #FDF3F2; */
+    /* margin: auto; */
+    width: 100%;
+    padding: 7rem 0;
+}
+
+.container-2 {
+    display: flex;
+    /* margin: auto; */
+    margin: 0 6rem;
+    justify-content: center;
+    align-items: center;
+    /* gap: 6rem; */
+}
+
+.text-cont h1 {
+    font-size: 2.5rem;
+    width: 70%;
+    margin-bottom: 1rem;
+    font-family: 'Graphik', sans-serif !important;
+    font-weight: 600;
+}
+
+.text-cont p {
+    padding-bottom: 0.6rem;
+    font-family: 'Graphik', sans-serif !important;
+    font-weight: 400;
+}
+
+.text-cont .black-p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text-cont .light-p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.4;
+}
+
+.users-img img {
+    width: 400px;
+}
+
+.country {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.country img {
+    width: 70px;
+}
+
+.country .flag-img {
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: #FFFFF2;
+    padding: 0.5rem 0.8rem;
+}
+
+/* Styling for section-3 */
+
+
+.section-3 {
+    background-image: url(img/bigyellowspiral.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    padding: 5rem 0;
+    width: 100%;
+    margin: auto;
+}
+
+
+.container-3 {
+    margin: 0 6rem;
+
+}
+
+.text-cont-1 h1 {
+    width: 40%;
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-family: 'Graphik', sans-serif !important;
+    font-weight: 600;
+    color: #161617;
+}
+
+.tech-jobs {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* font-size: 1.3rem; */
+}
+
+.p-texts p {
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 0.6rem 1.3rem;
+    opacity: 0.4;
+    font-size: 1.2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 30px hsla(0, 0%, 48%, .16);
+    transition: all .3s ease-in-out !important;
+    font-family: 'Graphik', sans-serif !important;
+    cursor: pointer;
+}
+
+.head-class h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    font-family: 'Graphik', sans-serif !important;
+    font-weight: 600;
+    color: #161617;
+}
+
+.talents {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.talent-text p {
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 0.6rem 1rem;
+    opacity: 0.4;
+    font-size: 1.2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 30px hsla(0, 0%, 48%, .16);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-family: 'Graphik', sans-serif !important;
+}
+
+/* Styling for section-4 */
+
+
+.section-4 {
+    background-color: #FFF8E5;
+    background-image: url(img/bigredspiral.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    /* overflow: hidden; */
+    width: 100%;
+    /* margin-top: -1rem;
+    margin-left: -1rem; */
+}
+
+.container-4 {
+    display: flex;
+    margin: 0 6rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.section-4 h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 6rem 0 5rem 0;
+    font-family: 'Graphik', sans-serif !important;
+    font-weight: 600;
+    color: #161617;
+}
+
+.style-img {
+    border: none;
+    border-bottom-right-radius: 10px;
+    padding: 3rem;
+    text-align: center;
+    background-color: rgb(255, 255, 246);
+    width: 32%;
+}
+
+.style-img img {
+    padding-bottom: 1rem;
+}
+
+.style-img p {
+    /* width: 20vw; */
+    text-align: center;
+    line-height: 1.3rem;
+    opacity: 0.6;
+    font-size: 1.05rem;
+    font-family: 'Graphik', sans-serif !important;
+}
+
+.container-4 :hover {
+    background-color: black;
+    color: #FFFAFA;
+}
+
+.section-btn {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Styling for talent footer */
+
+#footer-id {
+    background-color: #161617;
+    color: #FFFFFF;
+    /* padding: 3rem 0; */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    padding-top: 4.5rem;
+}
+
+.footer-img-2 img {
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
+.footer-content2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+
+.p-content {
+    padding-top: 3rem;
+}
+
+.p-content2 {
+    padding: 3rem 0 1rem 0;
+}
+
+.youtube img {
+    /* padding: 1rem 0; */
+}
+
+
+
+/* Media Queries For Talent Page */
+
+
+@media screen and (min-width:900px) and (max-width:1199px) {
+
+    /* Styling For Section-1 */
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texts {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .texts p {
+        width: 55%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .black-img img {
+        width: 700px;
+        padding-top: 3rem;
+        margin: auto;
+    }
+
+
+    /* Styling for section-4 */
+
+    .style-img {
+        width: 48%;
+    }
+
+    .style-img p {
+        width: 100%;
+    }
+
+    .last-style-img {
+        width: 98%;
+    }
+
+    .style-img img {
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+
+@media screen and (min-width:601px) and (max-width:899px) {
+    .a-class {
+        display: none;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .texts {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main-id {
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    .texts p {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .black-img img {
+        width: 500px;
+        padding-top: 3rem;
+        margin: auto;
+    }
+
+    /* Styling for section-2 */
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .text-cont {
+        text-align: center;
+    }
+
+    .text-cont h1 {
+        font-size: 2rem;
+        width: 100%;
+        line-height: 3rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .country {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+
+
+    /* Styling for section 3 */
+
+    .container-3 {
+        margin: 0 2rem;
+
+    }
+
+    .text-cont-1 h1 {
+        width: 60%;
+        margin: auto;
+        /* text-align: center; */
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    .tech-jobs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .p-texts p {
+        padding: 0.8rem 1.3rem;
+    }
+
+    .head-class h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .talents {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .talent-text p {
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+    }
+
+
+    /* Styling for section-4 */
+    .section-4 h1 {
+        font-size: 2rem;
+    }
+
+    .style-img {
+        width: 48%;
+    }
+
+    .last-style-img {
+        width: 98%;
+    }
+
+    .style-img img {
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width:50px) and (max-width:600px) {
+    .a-class {
+        display: none;
+    }
+
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texts {
+        margin: 0 auto;
+        text-align: center;
+        /* overflow: hidden; */
+    }
+
+    .texts h1 {
+        /* width: 80%; */
+        /* margin: auto; */
+    }
+
+    .texts p {
+        /* width: 80%; */
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .black-img img {
+        width: 400px;
+        padding-top: 3rem;
+        margin: auto;
+    }
+
+    /* Styling for section-2 */
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .text-cont {
+        /* text-align: left; */
+    }
+
+    .text-cont h1 {
+        font-size: 2rem;
+        width: 100%;
+        line-height: 3rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .country {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+
+
+    /* Styling for section 3 */
+
+    .container-3 {
+        margin: 0 2rem;
+
+    }
+
+    .text-cont-1 h1 {
+        /* width: 60%; */
+        /* margin: auto; */
+        /* text-align: center; */
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    .tech-jobs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .p-texts p {
+        padding: 0.8rem 1.3rem;
+    }
+
+    .head-class h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .talents {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .talent-text p {
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+    }
+
+
+    /* Styling for section-4 */
+    .section-4 h1 {
+        font-size: 2rem;
+    }
+
+    .style-img {
+        width: 100%;
+    }
+
+    .last-style-img {
+        width: 100%;
+    }
+
+    .style-img img {
+        padding-bottom: 1.5rem;
+    }
+}
